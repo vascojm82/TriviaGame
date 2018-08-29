@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="plugins/soundmanager2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/trivia.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Trivia Game</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/trivia.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="container">
+      <h1 class="title">Trivia Game</h1>
+      <div class="start">
+        <button class="button hvr-grow-shadow">Start</button>
+      </div>
+      <div class="main-container">
+        <p class="timer"></p>
+        <p class="question"></p>
+        <ul class="possible-answers">
+          <li class="hvr-grow first"></li>
+          <li class="hvr-grow second"></li>
+          <li class="hvr-grow third"></li>
+          <li class="hvr-grow fourth"></li>
+        </ul>
+      </div>
+      <div class="winner-container">
+        <h2 class="decision-title">You guessed it correctly !<h2>
+        <div class="decision-image">
+          <img src="assets/dan_thumbs_up.png" alt="SF Dan Thumbs Up">
+        </div>
+      </div>
+      <div class="loser-container">
+        <h2 class="decision-title">Wrong Answer !<h2>
+        <div class="decision-image">
+          <img src="assets/thumbs_down.gif" alt="SF Ken Thumbs Down">
+        </div>
+      </div>
+      <div class="result-container">
+        <h2 class="decision-title">All done, here is how you did: <h2>
+        <h4 class="results">Correct Answers : <span class="correct">0</span></h4>
+        <h4 class="results">Incorrect Answers : <span class="wrong">0</span></h4>
+        <h4 class="results">Unanswered : <span class="unanswered">0</span></h4>
+        <div class="restart">
+          <button class="button hvr-grow-shadow">Restart</button>
+        </div>
+      </div>
+      <div class="timeup"></div>
+    </div>
+  </body>
+</html>

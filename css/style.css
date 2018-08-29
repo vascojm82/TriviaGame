@@ -1,0 +1,169 @@
+body{
+  font-family: 'Anton', sans-serif;
+  text-shadow:
+        /* first layer at 1px */
+        -1px -1px 0px #000,
+         0px -1px 0px #000,
+         1px -1px 0px #000,
+        -1px  0px 0px #000,
+         1px  0px 0px #000,
+        -1px  1px 0px #000,
+         0px  1px 0px #000,
+         1px  1px 0px #000,
+        /* second layer at 2px */
+        -2px -2px 0px #000,
+        -1px -2px 0px #000,
+         0px -2px 0px #000,
+         1px -2px 0px #000,
+         2px -2px 0px #000,
+         2px -1px 0px #000,
+         2px  0px 0px #000,
+         2px  1px 0px #000,
+         2px  2px 0px #000,
+         1px  2px 0px #000,
+         0px  2px 0px #000,
+        -1px  2px 0px #000,
+        -2px  2px 0px #000,
+        -2px  1px 0px #000,
+        -2px  0px 0px #000,
+        -2px -1px 0px #000;
+}
+
+#myVideo {
+	  position: fixed;
+	  right: 0;
+	  bottom: 0;
+	  min-width: 100%;
+	  min-height: 100%;
+	  z-index:-1;
+	}
+
+.container{
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  border: 3px solid white;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/TriviaSpaceBG.jpg");
+}
+
+.title {
+  text-align: center;
+  margin-top: 5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 70px/normal "Warnes", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.start{
+  position: absolute;
+  width: 20%;
+  left: 50%;
+  top: 58%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.restart{
+  width: 30%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.button {
+  width: 100%;
+  background-color: #008CBA;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.main-container{
+  display: none;
+}
+
+.timer, .question, .possible-answers, .decision-title, .decision-image{
+  color: #FFFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+.decision-title{
+  font-size: -webkit-xxx-large;
+}
+
+.decision-image{
+  width: 100%
+}
+
+.decision-image img{
+  margin: auto;
+  height: 23rem;
+}
+
+.timer{
+  font-size: 3rem;
+  margin-top: -1rem;
+}
+
+.question{
+  font-size: 2rem;
+  margin-top: -1rem;
+}
+
+.possible-answers {
+  list-style: none;
+}
+
+.possible-answers li{
+  font-size: 1.7rem;
+  display: block;
+  cursor: pointer;
+}
+
+.winner-container{
+  display: none;
+}
+
+.loser-container{
+  display: none;
+}
+
+.result-container{
+  display: none;
+}
+
+.results{
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 1rem;
+}
+
+.timeup{
+  display: none;
+}
